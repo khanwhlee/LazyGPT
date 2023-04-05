@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "LazyGPT",
+  "description": "我真的不想再打字了",
+  "version": "1.0.0",
+  "icons": {
+    "16": "./images/icon.png",
+    "48": "./images/icon.png",
+    "128": "./images/icon.png"
+  },
+  "action": {
+    "default_title": "LazyGPT",
+    "default_icon": {
+      "16": "./images/icon.png",
+      "48": "./images/icon.png",
+      "128": "./images/icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": [ "activeTab", "storage" ],
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/chat/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "commands": {
+    "start-record": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P"
+      },
+      "description": "開始語音辨識"
+    },
+    "toggle-language": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O"
+      },
+      "description": "更改語言"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://chat.openai.com/chat/*"
+  ]
+}

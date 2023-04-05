@@ -1,0 +1,14 @@
+# ignore files and folders related to Chrome extension development
+node_modules/
+*.log
+*.pem
+*.crx
+*.key
+*.jks
+*.pkcs12
+*.p12
+*.der
+*.sig
+*.safariextz
+*.safariextbuilder
+*.safariarchive

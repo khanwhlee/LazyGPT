@@ -1,0 +1,53 @@
+<!-- 暫時用不到 -->
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" data-react-helmet="lang">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=0">
+    <title>LazyGPT</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #success, #failure {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    #success p {
+      color: green;
+    }
+
+    #failure p {
+      color: red;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <h1>LazyGPT 需要你的麥克風權限</h1>
+      <div id="success" class="hidden">
+        <p>授權成功！你可以關閉此頁面並開始使用。</p>
+      </div>
+      <div id="failure" class="hidden">
+        <p>授權失敗，請在右上角，網址列右邊點選麥克風並授權給 LazyGPT。</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="auth.js"></script>
+  </body>
+</html>
+
+
