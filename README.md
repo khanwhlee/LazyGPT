@@ -1,5 +1,7 @@
 ## LazyGPT
 
+🚀 [Chrome Extension Link](https://oakmega.ai/lazy-gpt)
+
 這是一個用於通過快捷鍵將語音轉換為文字並輸入到聊天對話框的工具。它支持中英文語音轉換，能夠大大減少打字時間，提高工作效率。
 
 ### 使用方法
